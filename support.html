@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HokwePay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+</head>
+<body>
+    <header class="flex items-center border-b">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="asset/images/logo-light.png" class="h-20" alt="Logo HokwePay">
+                <nav class="hidden lg:flex ml-10 space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-black">About Us</a>
+                    <a href="#" class="text-gray-700 hover:text-black">Blog</a>
+                    <a href="faqs.html" class="text-gray-700 hover:text-black">Faqs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden lg:flex space-x-4">
+                <button class="py-2 px-4 border border-black text-black font-semibold rounded hover:bg-gray-100">Sign Up</button>
+                <button class="py-2 px-4 bg-black text-white font-semibold rounded hover:bg-gray-800">Learn More</button>
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="lg:hidden hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="faqs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Faqs</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </nav>
+    </header>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto mb-10 md:mb-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative z-10 flex flex-col items-start justify-between h-full text-white">
+                <h2 class="text-sm font-medium">Solutions</h2>
+                <h1 class="text-4xl font-bold mb-4 mt-6">Get Help Now</h1>
+                <p class="leading-relaxed text-sm lg:text-base">
+                    Welcome to our Help Center. Find answers to your questions and access helpful resources.
+                </p>
+                <div class="mt-8 flex justify-start gap-4">
+                    <a href="#" class="bg-black text-white px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-white px-4 py-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col mb-12 md:mb-20 gap-4 md:gap-10 md:flex-row md:items-center md:justify-between">
+            <div class="text-left md:w-1/2 space-y-4">
+                <h2 class="text-xs font-medium">Who whe are</h2>
+                <h1 class="text-4xl leading-tight font-bold">
+                    Get Help with HokwePay Features and More
+                </h1>
+                <p>
+                    Explore our help topics to learn more about setting up your account,
+                    processing payments, our rewards program, and understanding your rental score.
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-16 lg:gap-y-0">
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/30" alt="Relume Logo" class="w-100 h-8">
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-lg md:text-2xl font-bold">Account Setup</h2>
+                    <p class="leading-relaxed text-sm lg:text-base mr-2">
+                        Learn how to set up your HokwePay account.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/30" alt="Relume Logo" class="w-100 h-8">
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-lg md:text-2xl font-bold">Payment Processing</h2>
+                    <p class="leading-relaxed text-sm lg:text-base mr-2">
+                        Discover how payments are processed through HokwePay.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/30" alt="Relume Logo" class="w-100 h-8">
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-lg md:text-2xl font-bold">Rewards Program</h2>
+                    <p class="leading-relaxed text-sm lg:text-base mr-2">
+                        Find out about the benefits of our rewards program.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 flex space-x-4">
+            <a href="#" class="border border-black px-4 py-2">Learn More</a>
+            <a href="#" class="border border-none px-4 py-2">Sign Up →</a>
+        </div>
+    </div>
+
+    <section class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="grid grid-cols-1 gap-y-16">
+            <div class="space-y-4">
+                <h1 class="text-4xl font-bold mb-4">FAQs</h1>
+                <p class="">Find answers to common questions about using HokwePay, whether you're a landlord or a tenant.</p>
+            </div>
+            <div class="space-y-4">
+                <details class="border-b border-gray-300 py-4">
+                    <summary class="font-semibold text-lg">How do I contact support?</summary>
+                    <p class="mt-2 text-gray-600">To contact our support team, you can reach out to us through the contact form on our website or by sending an email to support@companyname.com. We strive to respond to all inquiries within 24 hours.</p>
+                </details>
+                <details class="border-b border-gray-300 py-4">
+                    <summary class="font-semibold text-lg">How can I get service assistance?</summary>
+                    <p class="mt-2 text-gray-600">If you require assistance with our services, please fill out the service inquiry form on our website or send an email to services@companyname.com. Our team will be happy to assist you.</p>
+                </details>
+                <details class="border-b border-gray-300 py-4">
+                    <summary class="font-semibold text-lg">What are the support hours?</summary>
+                    <p class="mt-2 text-gray-600">Our support team is available to assist you Monday through Friday, from 9:00 AM to 5:00 PM EST. Please note that response times may be longer outside of these hours.</p>
+                </details>
+                <details class="border-b border-gray-300 py-4">
+                    <summary class="font-semibold text-lg">Can I request a refund?</summary>
+                    <p class="mt-2 text-gray-600">Refund requests will be evaluated on a case-by-case basis. Please contact our support team with your request, and we will assist you accordingly.</p>
+                </details>
+                <details class="border-b border-gray-300 py-4">
+                    <summary class="font-semibold text-lg">How do I provide feedback?</summary>
+                    <p class="mt-2 text-gray-600">We value your feedback! You can share your thoughts, suggestions, or concerns by filling out the feedback form on our website or sending an email to feedback@companyname.com.</p>
+                </details>
+            </div>
+            <div class="space-y-4">
+                <h1 class="text-4xl font-bold mb-4">Still have questions?</h1>
+                <p>Contact our support team for further assistance.</p>
+            </div>
+            <p><a href="#" class="border border-black px-4 py-2">Contact</a></p>
+        </div>
+    </section>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-4xl leading-tight font-bold mt-4">
+                        Step-by-Step Guides for Using HokwePay
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        Learn how to make the most of HokwePay with our easy-to-follow guides.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Getting Started</h1>
+                        <p class="text-sm lg:text-base">Set up your account, add properties, and start collecting rent seamlessly.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Managing Payments</h1>
+                        <p class="text-sm lg:text-base">Track rent payments, send reminders, and easily handle late fees and penalties.</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up →</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col mb-12 md:mb-20 gap-4 md:gap-16 md:flex-row md:items-center md:justify-between">
+            <div class="text-left md:w-3/5 space-y-4">
+                <h2 class="text-sm lg:text-base font-semibold">Support</h2>
+                <h1 class="text-4xl leading-tight font-bold">Contact Support</h1>
+                <p>If you need any assistance or have any questions, please don't hesitate to reach out to us.</p>
+            </div>
+            <div class="md:w-2/5 mr-2 space-y-6">
+                <div class="flex flex-row gap-4">
+                    <i class="fas fa-regular fa-envelope mt-1"></i>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">Email</h4>
+                        <p><a class="underline" href="mailto:contact@hokwepay.co">contact@hokwepay.co</a></p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4">
+                    <i class="fas fa-regular fa-phone mt-1"></i>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">Phone</h4>
+                        <p><a class="underline" href="tel:2290000000">(229) 000 000 00</a></p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4">
+                    <i class="fas fa-map mt-1"></i>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">Office</h4>
+                        <p>123 Sample St, Sydney NSW 2000 AU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/600x300.png" alt="Webflow Logo" class="h-full w-full">
+        </div>
+    </div>
+
+    <footer class="mt-20 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start gap-20 mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold mb-4">Logo</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row md:flex-wrap w-full justify-between">
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="#">Services</a></li>
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a href="faqs.html">FAQ</a></li>
+                            <li class="mb-2"><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                            <li class="mb-2"><a href="#">Testimonials</a></li>
+                            <li class="mb-2"><a href="#">Partners</a></li>
+                            <li class="mb-2"><a href="#">Investors</a></li>
+                            <li class="mb-2"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">News</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Events</a></li>
+                            <li class="mb-2"><a href="terms.html">Terms</a></li>
+                            <li class="mb-2"><a href="#">Privacy</a></li>
+                            <li class="mb-2"><a href="#">Cookies</a></li>
+                            <li class="mb-2"><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 md:mt-4 lg:mt-0">
+                        <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+                        <p class="mb-4">Join our mailing list for the latest updates and promotions.</p>
+                        <form class="flex flex-col sm:flex-row mb-4">
+                            <input type="email" placeholder="Enter email address" class="border px-4 py-2 mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto">
+                            <button class="border px-4 py-2">Subscribe</button>
+                        </form>
+                        <p class="text-sm">By subscribing, you agree to our Privacy Policy and consent to receive updates from us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm mb-4 md:mb-0">
+                        © 2024 HokwePay. All rights reserved.
+                        <a href="#" class="underline mx-2">Privacy Policy</a>
+                        <a href="terms.html" class="underline mx-2">Terms of Service</a>
+                        <a href="#" class="underline mx-2">Cookies Settings</a>
+                    </p>
+                    <div class="flex space-x-2">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

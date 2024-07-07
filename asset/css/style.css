@@ -1,0 +1,25 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.carousel-control {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.carousel-control:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HokwePay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="asset/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="flex items-center border-b">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="asset/images/logo-light.png" class="h-20" alt="Logo HokwePay">
+                <nav class="hidden lg:flex ml-10 space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-black">About Us</a>
+                    <a href="#" class="text-gray-700 hover:text-black">Blog</a>
+                    <a href="faqs.html" class="text-gray-700 hover:text-black">Faqs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden lg:flex space-x-4">
+                <button class="py-2 px-4 border border-black text-black font-semibold rounded hover:bg-gray-100">Sign Up</button>
+                <button class="py-2 px-4 bg-black text-white font-semibold rounded hover:bg-gray-800">Learn More</button>
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="lg:hidden hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="faqs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Faqs</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </nav>
+    </header>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col lg:flex-row gap-0 lg:gap-8 items-center justify-between">
+            <div class="text-left w-full lg:w-1/2">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-8 mr-4 md:mr-0">
+                    Revolutionize rent collection with HokwePay
+                </h1>
+                <p class="mb-8 text-sm lg:text-base leading-relaxed">
+                    Discover the benefits of using HokwePay to streamline your rent collection
+                    process and increase financial stability. With our innovative technology
+                    and customer-centric approach, we provide efficient rent collection services,
+                    financial insights, and reporting tools to support your investment decisions.
+                </p>
+                <div class="space-x-4">
+                    <button class="px-4 py-2 bg-black text-white">Learn More</button>
+                    <button class="px-4 py-2 border border-black">Sign Up</button>
+                </div>
+            </div>
+            <div class="mt-10 lg:mt-0 w-full lg:w-1/2 flex items-center justify-center">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="h-100 w-full">
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row md:items-center lg:items-start md:justify-between">
+            <div class="mb-10 md:mb-0 md:mr-8 w-full md:w-1/3">
+                <p class="text-base font-bold">Used by the world's most average companies</p>
+            </div>
+            <div class="grid md:w-2/3 grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 md:gap-6 lg:flex lg:justify-between">
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-end md:justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Relume" alt="Relume Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-end md:justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Relume" alt="Relume Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col mb-12 md:mb-20 gap-4 md:gap-10 md:flex-row md:items-center md:justify-between">
+            <div class="text-left md:w-1/2">
+                <h2 class="text-sm lg:text-base font-semibold mb-5">Who whe are</h2>
+                <h1 class="text-4xl leading-tight font-bold">User-Centric Research and Innovative Solutions</h1>
+            </div>
+            <div class="text-left md:w-1/2 mr-2">
+                <p class="leading-relaxed text-sm lg:text-base">
+                    We take a user-centric approach, conducting research and analysis
+                    to identify the gaps and design the best-fit solutions with
+                    the help of technology and innovation.
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-16 lg:gap-y-0">
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                </div>
+                <div>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Overcoming Late Rent and Unreliable Tenants</h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                        Say goodbye to late rent payments and unreliable tenants with HokwePay's innovative solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                </div>
+                <div>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Dispose a 360 Overview of your Finance</h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                        Get a comprehensive view of your finances for better decision-making and financial stability.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                </div>
+                <div>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Unlock financial opportunity accesibility</h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                        Unlock financial stability and loan accessibility with HokwePay's efficient rent collection services.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2 md:gap-y-4 lg:items-start">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                </div>
+                <div>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Enhance tenant satisfation</h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                        Enjoy round-the-clock support to increase tenant satisfaction and resolve any issues promptly.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 flex space-x-4">
+            <a href="#" class="border border-black px-4 py-2">Learn More</a>
+            <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="lg:w-3/5 mx-auto text-center">
+            <h2 class="text-sm lg:text-base font-semibold">Revolutionize</h2>
+            <h1 class="text-4xl font-bold mt-4">Transforming the Rent Collection Experience for Landlords</h1>
+            <p class="mt-4 leading-relaxed text-sm lg:text-base">
+                Our customer-centric approach ensures that we understand the unique challenges
+                faced by landlords and provide innovative technology solutions to meet their needs.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row mt-16 gap-x-8 gap-y-10 md:gap-y-0 items-start justify-between">
+            <div class="w-full md:w-1/3 flex flex-col gap-y-5 items-center justify-between">
+                <div class="w-full">
+                    <img src="https://via.placeholder.com/300" alt="Relume Logo" class="w-full h-48 object-cover">
+                </div>
+                <div class="text-center">
+                    <h2 class="text-xl lg:text-2xl leading-tight font-bold mb-2">
+                        Innovative Payment App HokwePay's for Efficient Rent Collection
+                    </h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base">
+                        HokwePay leverages technology to revolutionize rent collection.
+                        Our automated system ensures hassle-free payments,
+                        digital receipts, and real-time rental score tracking.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 flex flex-col gap-y-5 items-center justify-between">
+                <div class="w-full">
+                    <img src="https://via.placeholder.com/300" alt="Relume Logo" class="w-full h-48 object-cover">
+                </div>
+                <div class="text-center">
+                    <h2 class="text-xl lg:text-2xl leading-tight font-bold mb-2">
+                        Financial Insights & Reporting for Informed Decision-Making
+                    </h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base">
+                        Access comprehensive financial analytics and reporting tools to gain
+                        valuable insights and make informed investment decisions.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 flex flex-col gap-y-5 items-center justify-between">
+                <div class="w-full">
+                    <img src="https://via.placeholder.com/300" alt="Relume Logo" class="w-full h-48 object-cover">
+                </div>
+                <div class="text-center">
+                    <h2 class="text-xl lg:text-2xl leading-tight font-bold mb-2">
+                        Support System for Incident Management and Issue Resolution
+                    </h2>
+                    <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base">
+                        Our dedicated support team is available round the clock to
+                        assist with any incidents or issues that may arise.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="#" class="border border-black px-4 py-2">Learn More</a>
+            <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+        </div>
+    </div>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto my-10 md:my-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                <h1 class="text-4xl lg:text-4xl font-bold mb-4">Rent Made Easy</h1>
+                <p class="leading-relaxed text-center text-sm lg:text-base">
+                    Collect Rent Hassle-Free and Increase Your Financial Stability
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 flex flex-col justify-between h-full">
+                <div>
+                    <h2 class="text-sm lg:text-base font-semibold">Solutions</h2>
+                    <h1 class="text-4xl leading-tight font-bold mt-4">
+                        Innovative Solutions for Efficient Rent Collection
+                    </h1>
+                    <p class="mt-4 leading-relaxed text-sm lg:text-base">
+                        HokwePay leverages technology to revolutionize rent collection.
+                        Our automated system ensures hassle-free payments,
+                        digital receipts, and real-time rental score tracking.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col items-start justify-between gap-4">
+                    <div class="flex flex-row items-start justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Automated Rent Collection for Easy Payment Management</p>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Digital Payment Receipts for Convenient Record-Keeping</p>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Track Rental Score to Evaluate Tenant Solvability</p>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full mt-10 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 lg:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-x-0 gap-y-16 md:gap-x-16">
+            <div class="w-full md:w-2/5 flex flex-col justify-between h-full">
+                <div>
+                    <h2 class="text-sm lg:text-base font-semibold">Benefits</h2>
+                    <h1 class="text-4xl leading-tight font-bold mt-4">
+                        Efficient Rent Collection Services for Landlords
+                    </h1>
+                    <p class="mt-4 md:mt-8 leading-relaxed text-sm lg:text-base">
+                        HokwePay offers financial stability, loan accessibility,
+                        and increased bankarization rate through our efficient
+                        rent collection services. With our innovative approach,
+                        we provide a solution that addresses the challenges
+                        faced by landlords, ensuring they receive their rent on time.
+                    </p>
+                </div>
+                <div class="flex justify-start gap-4 mt-8">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="w-full md:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                <div class="w-full flex flex-col gap-y-4 lg:items-start">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-xl font-bold mb-2">Financial Stability for Landlords</h2>
+                        <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                            Ensure a steady income stream with our efficient rent collection services.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-y-4 lg:items-start">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-xl font-bold mb-2">Loan Accessibility for Landlords</h2>
+                        <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                            Unlock financial opportunities with easy access to loans based on your rental income.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-y-4 lg:items-start">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-xl font-bold mb-2">Increased Bankarization Rate for Landlords</h2>
+                        <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                            Improve your financial profile and increase your banking options with our rent collection services.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-y-4 lg:items-start">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-xl font-bold mb-2">Improve tenant reliability</h2>
+                        <p class="mt-2 md:mt-4 leading-relaxed text-sm lg:text-base mr-2">
+                            Gain valuable financial insights and access comprehensive
+                            reporting tools to manage your rental properties effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto my-10 md:my-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative w-full px-5 lg:px-0 lg:w-2/3 mx-auto z-10 flex flex-col items-center justify-center gap-y-4 h-full text-center text-white">
+                <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                <h2 class="text-sm lg:text-base font-semibold">Unlock Your Financial Potential</h2>
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                    Financial Insights and Saving & Investment Counseling Services
+                </h1>
+                <p class="leading-relaxed text-center text-sm lg:text-base">
+                    HokwePay provides comprehensive financial insights, reporting,
+                    and investment counseling services through our advanced financial
+                    analytics tools. Gain valuable information and make informed
+                    decisions to optimize your financial strategies.
+                </p>
+                <div class="flex justify-start gap-4 mt-4">
+                    <a href="#" class="border border-white px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-4xl md:text-3xl leading-tight font-bold mt-4">
+                        Unlock Financial Insights with Advanced Analytics and Reporting Tools
+                    </h1>
+                    <p class="mt-4 mb:mt-8 leading-relaxed text-sm lg:text-base">
+                        Gain better financial management and make informed investment
+                        decisions with our advanced financial analytics and reporting tools.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col items-start justify-between gap-4">
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Efficient Financial Data Analysis for Improved Decision Making</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Enhance Financial Performance with Actionable Insights</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Optimize Investments with Comprehensive Financial Reporting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between h-full gap-x-0 md:gap-x-16">
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mb-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-4xl md:text-3xl lg:text-4xl leading-tight font-bold mt-4">
+                        Financial Insights & Reporting: Gain valuable financial insights with our reporting tools.
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        Our financial analytics and reporting tools provide detailed information
+                        for better decision-making and financial stability.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col items-start justify-between gap-4">
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Track income and expenses for accurate financial analysis.</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Monitor rental payment trends to identify potential issues.</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                        <p class="text-sm lg:text-base">Receive investment and savings counsel based on your financial data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h2 class="text-sm lg:text-base font-semibold">Benefits</h2>
+                    <h1 class="text-4xl md:text-3xl lg:text-4xl leading-tight font-bold mt-4">
+                        Promoting Financial Inclusivity with HokwePay
+                    </h1>
+                    <p class="mt-6 lg:mt-8 leading-relaxed text-sm lg:text-base">
+                        HokwePay is revolutionizing rent collection by promoting digital
+                        transactions and financial inclusivity. With our innovative mobile app,
+                        landlords can easily collect rent, while tenants enjoy the convenience
+                        of paying digitally.
+                    </p>
+                </div>
+                <div class="my-6 lg:my-10 flex flex-col md:flex-row items-start justify-between gap-4">
+                    <div class="flex flex-col items-start justify-between gap-4">
+                        <h1 class="text-4xl leading-tight font-bold">50%</h1>
+                        <p class="text-sm lg:text-base">Increase bankarization rate through digital rent payments.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-4">
+                        <h1 class="text-4xl leading-tight font-bold">50%</h1>
+                        <p class="text-sm lg:text-base">Promote financial inclusivity by making rent payments accessible to all.</p>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full gap-4 md:gap-0">
+                <div>
+                    <h2 class="text-sm lg:text-base font-semibold">Services</h2>
+                    <h1 class="text-4xl md:text-3xl lg:text-4xl leading-tight font-bold mt-4">
+                        Streamline Incident Management for Landlords
+                    </h1>
+                    <p class="mt-6 lg:mt-8 leading-relaxed text-sm lg:text-base">
+                        Our support system for incident management simplifies and automates the process,
+                        saving landlords time and effort. With our innovative technology,
+                        landlords can easily report and track incidents, communicate with tenants,
+                        and resolve issues promptly.
+                    </p>
+                </div>
+                <div class="my-6 lg:my-10 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base md:text-lg lg:text-xl leading-tight font-bold">Simplified Process</h1>
+                        <p class="text-sm lg:text-base">Report and track incidents, communicate with tenants, and resolve issues promptly.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base md:text-lg lg:text-xl leading-tight font-bold">Efficient Communication</h1>
+                        <p class="text-sm lg:text-base">Stay connected with tenants and address their concerns in a timely manner.</p>
+                    </div>
+                </div>
+                <div class="flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto my-10 md:my-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative w-full mx-auto z-10 flex flex-col md:flex-row items-start justify-between gap-y-4 h-full text-white">
+                <h1 class="text-3xl lg:text-4xl font-bold mb-2">
+                    Streamlined Incident Management
+                </h1>
+                <div class="w-full md:w-1/2">
+                    <p class="leading-relaxed text-sm lg:text-base">
+                        Our support system for incident management simplifies and automates the process,
+                        saving landlords time and effort. With our innovative technology,
+                        landlords can easily report and track incidents,
+                        communicate with tenants, and resolve issues promptly.
+                    </p>
+                    <div class="my-6 md:my-10 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                        <div class="flex flex-col items-start justify-between gap-y-2 gap-x-0 md:gap-x-4 md:gap-y-4">
+                            <h1 class="text-base lg:text-lg leading-tight font-bold">Simplified Process</h1>
+                            <p class="text-sm lg:text-base">Report and track incidents, communicate with tenants, and resolve issues promptly.</p>
+                        </div>
+                        <div class="flex flex-col items-start justify-between gap-y-2 gap-x-0 md:gap-x-4 md:gap-y-4 ">
+                            <h1 class="text-base lg:text-lg leading-tight font-bold">Efficient Communication</h1>
+                            <p class="text-sm lg:text-base">Stay connected with tenants and address their concerns in a timely manner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-3xl leading-tight font-bold mt-4">
+                        Efficient Incident Management Support System for Smooth Renting Process
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        Our support system ensures timely resolutions of incidents,
+                        maintaining a smooth renting process for landlords and tenants.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Streamlined Support</h1>
+                        <p class="text-sm lg:text-base">Quickly resolve any issues that arise, ensuring a hassle-free renting experience for all.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Efficient Resolution</h1>
+                        <p class="text-sm lg:text-base">Our support team is dedicated to resolving incidents promptly, providing peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-3xl leading-tight font-bold mt-4">
+                        Efficient Incident Management Support System for Smooth Renting Process
+                    </h1>
+                    <p class="mt-4 leading-relaxed text-sm lg:text-base">
+                        Our support system ensures timely resolutions of incidents,
+                        maintaining a smooth renting process for landlords and tenants.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4 w-full w-1/2">
+                        <h1 class="text-base lg:text-xl leading-tight font-bold">Streamlined Support</h1>
+                        <p class="text-sm lg:text-base">Our support system is designed to handle incidents promptly and efficiently, minimizing disruptions.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-2 md:gap-4 w-full w-1/2">
+                        <h1 class="text-base lg:text-xl leading-tight font-bold">Reliable Assistance</h1>
+                        <p class="text-sm lg:text-base">Count on us to provide reliable assistance whenever an incident arises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-neutral-600 h-auto my-20">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative w-full mx-auto z-10 flex flex-col md:flex-row items-start justify-between gap-x-8 gap-y-4 h-full text-slate-50">
+                <h1 class="text-2xl w-full md:w-1/2 md:text-3xl font-bold leading-tight mb-4">
+                    Empowering Landlords with Efficient Rent Collection Services and Financial Insights
+                </h1>
+                <div class="w-full md:w-1/2">
+                    <p class="leading-relaxed text-light text-sm lg:text-base">
+                        With HokwePay, landlords can increase the bankarization rate by providing
+                        a customer-centric approach to rent collection. Our innovative technology
+                        fills the gap in traditional payment methods, ensuring financial stability
+                        and accessibility to loans. Additionally, our financial analytics and reporting
+                        tools offer valuable insights and investment counsel, while our support system
+                        efficiently manages any incidents that may arise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <h2 class="text-4xl font-bold mb-4">Customer Testimonials</h2>
+        <p class="mb-10">See what our satisfied landlords have to say.</p>
+        <div class="grid md:grid-cols-2 gap-4 gap-y-10">
+            <div class="bg-white">
+                <div class="flex items-center mb-4">
+                    <div class="flex space-x-1 text-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                    </div>
+                </div>
+                <p class="mb-4">HokwePay has provided me with the financial stability and increased loan accessibility that I needed as a landlord. It has truly transformed the way I manage my rental properties.</p>
+                <div class="flex flex-row gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"></div>
+                        <div>
+                            <p class="font-bold text-sm">John Doe</p>
+                            <p class="text-sm">Landlord, ABC Properties</p>
+                        </div>
+                    </div>
+                    <div class="border-l-2 border-gray-500 p-4">
+                        <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white">
+                <div class="flex items-center mb-4">
+                    <div class="flex space-x-1 text-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.973a1 1 0 00.95.69h4.184c.97 0 1.371 1.24.588 1.81l-3.39 2.457a1 1 0 00-.364 1.118l1.287 3.973c.3.921-.755 1.688-1.538 1.118l-3.39-2.457a1 1 0 00-1.175 0l-3.39 2.457c-.783.57-1.837-.197-1.538-1.118l1.287-3.973a1 1 0 00-.364-1.118L2.62 9.4c-.783-.57-.382-1.81.588-1.81h4.184a1 1 0 00.95-.69l1.286-3.973z"/></svg>
+                    </div>
+                </div>
+                <p class="mb-4">Using HokwePay has significantly improved my incident management process. I now have a reliable support system in place to handle any issues that arise with my tenants.</p>
+                <div class="flex flex-row gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"></div>
+                        <div>
+                            <p class="font-bold text-sm">John Doe</p>
+                            <p class="text-sm">Landlord, ABC Properties</p>
+                        </div>
+                    </div>
+                    <div class="border-l-2 border-gray-500 p-4">
+                        <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="mb-8 w-full flex flex-col md:flex-row items-center justify-between">
+            <div>
+                <h2 class="text-sm lg:text-base font-semibold">Rent</h2>
+                <h1 class="text-4xl font-bold my-4">Guides for Landlords and Tenants</h1>
+                <p class="mb-6 text-sm lg:text-base">Learn how to improve rent collection and financial stability</p>
+            </div>
+            <button class="px-4 py-2 border border-gray-800 text-gray-800">View all</button>
+        </div>
+
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Guide Card 1 -->
+            <div class="overflow-hidden">
+                <div class="bg-gray-200 h-100 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full object-contain">
+                </div>
+                <div class="py-6">
+                    <div class="flex flex-row items-center justify-start gap-x-4 mb-4">
+                        <div class="text-sm lg:text-base font-semibold bg-gray-200 px-4 py-1">Rent</div>
+                        <div class="text-sm lg:text-base">5 min read</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">The Importance of Timely Rent Payments</h3>
+                    <p class="mb-4 text-sm lg:text-base">Discover why paying rent on time is crucial for both landlords and tenants.</p>
+                    <a href="#" class="hover:underline">Read more &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Guide Card 2 -->
+            <div class="overflow-hidden">
+                <div class="bg-gray-200 h-100 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full object-contain">
+                </div>
+                <div class="py-6">
+                    <div class="flex flex-row items-center justify-start gap-x-4 mb-4">
+                        <div class="text-sm lg:text-base font-semibold bg-gray-200 px-4 py-1">Rent</div>
+                        <div class="text-sm lg:text-base">5 min read</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">How to Build a Positive Rental Score</h3>
+                    <p class="mb-4 text-sm lg:text-base">Learn strategies to improve your rental score and increase your chances of getting approved for future rentals.</p>
+                    <a href="#" class="hover:underline">Read more &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Guide Card 3 -->
+            <div class="overflow-hidden">
+                <div class="bg-gray-200 h-100 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full object-contain">
+                </div>
+                <div class="py-6">
+                    <div class="flex flex-row items-center justify-start gap-x-4 mb-4">
+                        <div class="text-sm lg:text-base font-semibold bg-gray-200 px-4 py-1">Rent</div>
+                        <div class="text-sm lg:text-base">5 min read</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Financial Stability for Landlords and Tenants</h3>
+                    <p class="mb-4 text-sm lg:text-base">Discover the importance of financial stability and how it benefits both landlords and tenants.</p>
+                    <a href="#" class="hover:underline">Read more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    <h1 class="text-4xl md:text-3xl lg:text-4xl leading-tight font-bold mt-4">
+                        Rental Score Calculator: Assess Tenant Reliability
+                    </h1>
+                    <p class="mt-6 lg:mt-8 leading-relaxed text-sm lg:text-base">
+                        Our Rental Score Calculator system helps landlords assess tenant
+                        reliability and overcome late payments. With this innovative tool,
+                        you can make informed decisions when screening potential tenants,
+                        ensuring a more secure and hassle-free rental experience.
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="md:flex w-full md:w-1/2 h-full mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    <h1 class="text-4xl md:text-3xl lg:text-4xl leading-tight font-bold mt-4">
+                        Incentives and Loyalty Program for reliable tenants
+                    </h1>
+                    <p class="mt-6 lg:mt-8 leading-relaxed text-sm lg:text-base">
+                        Our innovative incentives and loyalty program are designed to
+                        enhance tenant reliability. By rewarding tenants who consistently
+                        pay their rent on time, we create a positive rental experience
+                        and foster a strong landlord-tenant relationship.
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h2 class="text-sm lg:text-base font-semibold">Services</h2>
+                    <h1 class="text-3xl leading-tight font-bold mt-4">
+                        Ensure landlord financial stability and increase loan accessibility
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        HokwePay is a revolutionary rent collection service that ensures financial
+                        stability and increases loan accessibility. With our innovative rental
+                        scoring system and penalties & incentives mechanisms, we provide a
+                        comprehensive solution to landlords' needs.
+                    </p>
+                </div>
+                <div class="my-6 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-2">
+                        <h1 class="text-base leading-tight font-bold">Rental Scoring</h1>
+                        <p class="text-sm lg:text-base">Build tenant solvability score and make informed rental decisions with our rental scoring system.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-2">
+                        <h1 class="text-base leading-tight font-bold">Penalties & Incentives</h1>
+                        <p class="text-sm lg:text-base">Motivate tenants to pay rent on time through our penalties & incentives mechanisms.</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="relative bg-neutral-600 h-auto my-10 md:my-20">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative z-10 flex flex-col md:flex-row items-start justify-between gap-4 text-slate-50">
+                <h1 class="text-2xl w-full md:w-1/2 md:text-3xl font-bold leading-tight mb-4">
+                    Enhance Customer Satisfaction with Our Automated Feedback and Review Program
+                </h1>
+                <div class="w-full md:w-1/2">
+                    <p class="leading-relaxed text-light text-sm lg:text-base">
+                        Our customer-centric approach includes an automated feedback and review program,
+                        allowing landlords to gather valuable insights and ratings from their tenants.
+                        This helps improve overall customer satisfaction and allows landlords to make
+                        informed decisions based on tenant feedback.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <h2 class="text-sm font-bold mb-2">Simplified</h2>
+        <h1 class="text-4xl font-bold mb-4">Pricing Structure</h1>
+        <p class="mb-8">Find the perfect plan for your rental needs.</p>
+        <div class="mt-20 grid lg:grid-cols-2 flex flex-row items-center gap-8">
+            <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                    <div>
+                        <h3 class="text-lg mb-4 font-semibold">Transparent Pricing</h3>
+                        <p>Our pricing is based on 8% of each rent amount.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                    <div>
+                        <h3 class="text-lg mb-4 font-semibold">Flexible Options</h3>
+                        <p>Choose from a range of pricing plans to suit your requirements.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-6">
+                    <div>
+                        <h3 class="text-lg mb-4 font-semibold">No Hidden Fees</h3>
+                        <p>We believe in transparent pricing with no surprises.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-gray-500 p-6">
+                <h2 class="text-xl font-bold mb-2">Basic Plan</h2>
+                <p class="text-gray-600 mb-4">Ideal for small landlords</p>
+                <div class="text-3xl font-bold">$19<span class="text-lg font-normal">/mo</span></div>
+                <hr class="border border-gray-500 my-4">
+                <p class="mb-4">Includes:</p>
+                <ul class="gap-y-2 gap-x-4 mb-4 grid grid-cols-2">
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Rent Collection
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Tenant Screening
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Financial Reports
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Secure Transactions
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Rental Score Evaluation
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Payment Reminders
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Maintenance Requests
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        24/7 Support
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Loyalty Program
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11.1L5.3 7.4 3.9 8.8 9 13.9 20.1 2.8 18.7 1.4 9 11.1z"/></svg>
+                        Rewards for On-Time Payments
+                    </li>
+                </ul>
+                <hr class="border border-gray-500 my-4">
+                <button class="w-full py-2 bg-black text-white">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20 mb-10">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-3xl leading-tight font-bold mt-4">
+                        Transform Your Rent Collection Process
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        Experience the benefits of HokwePay and streamline your rent collection today.
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black bg-black text-white px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-black px-4 py-2">Sign Up &rarr;</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="mt-20 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start gap-20 mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold mb-4">Logo</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row md:flex-wrap w-full justify-between">
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="#">Services</a></li>
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a href="faqs.html">FAQ</a></li>
+                            <li class="mb-2"><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                            <li class="mb-2"><a href="#">Testimonials</a></li>
+                            <li class="mb-2"><a href="#">Partners</a></li>
+                            <li class="mb-2"><a href="#">Investors</a></li>
+                            <li class="mb-2"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">News</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Events</a></li>
+                            <li class="mb-2"><a href="terms.html">Terms</a></li>
+                            <li class="mb-2"><a href="#">Privacy</a></li>
+                            <li class="mb-2"><a href="#">Cookies</a></li>
+                            <li class="mb-2"><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 md:mt-4 lg:mt-0">
+                        <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+                        <p class="mb-4">Join our mailing list for the latest updates and promotions.</p>
+                        <form class="flex flex-col sm:flex-row mb-4">
+                            <input type="email" placeholder="Enter email address" class="border px-4 py-2 mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto">
+                            <button class="border px-4 py-2">Subscribe</button>
+                        </form>
+                        <p class="text-sm">By subscribing, you agree to our Privacy Policy and consent to receive updates from us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm mb-4 md:mb-0">
+                        © 2024 HokwePay. All rights reserved.
+                        <a href="#" class="underline mx-2">Privacy Policy</a>
+                        <a href="terms.html" class="underline mx-2">Terms of Service</a>
+                        <a href="#" class="underline mx-2">Cookies Settings</a>
+                    </p>
+                    <div class="flex space-x-2">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HokwePay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+</head>
+<body>
+    <header class="flex items-center border-b">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="asset/images/logo-light.png" class="h-20" alt="Logo HokwePay">
+                <nav class="hidden lg:flex ml-10 space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-black">About Us</a>
+                    <a href="#" class="text-gray-700 hover:text-black">Blog</a>
+                    <a href="faqs.html" class="text-gray-700 hover:text-black">Faqs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden lg:flex space-x-4">
+                <button class="py-2 px-4 border border-black text-black font-semibold rounded hover:bg-gray-100">Sign Up</button>
+                <button class="py-2 px-4 bg-black text-white font-semibold rounded hover:bg-gray-800">Learn More</button>
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="lg:hidden hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="faqs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Faqs</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </nav>
+    </header>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto mb-10 md:mb-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                <h2 class="text-sm font-medium">Simplified</h2>
+                <h1 class="text-4xl font-bold mb-4 mt-6">Rent Made Easy</h1>
+                <p class="leading-relaxed text-center text-sm lg:text-base">
+                    Collect Rent Hassle-Free and Increase Your Financial Stability
+                </p>
+                <div class="mt-8 flex justify-start gap-4">
+                    <a href="#" class="bg-black text-white px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-white px-4 py-2">Sign Up →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row md:items-center lg:items-start md:justify-between gap-10">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-3xl lg:text-4xl font-bold mb-2">
+                    Revolutionizing Rental Management Services: Our Vision and Mission
+                </h1>
+            </div>
+            <div class="w-full md:w-1/2">
+                <p class="leading-relaxed text-sm lg:text-base">
+                    At HokwePay, our goal is to transform the way rental management services are provided.
+                    We aim to streamline the rent collection process for landlords and create
+                    a seamless experience for tenants.
+                </p>
+                <div class="my-6 md:my-10 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-4">
+                    <div class="flex flex-col items-start justify-between gap-y-2 gap-x-0 md:gap-x-4 md:gap-y-4">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Vison</h1>
+                        <p class="text-sm lg:text-base">To be the leading platform that revolutionizes rent collection and enhances rental management.</p>
+                    </div>
+                    <div class="flex flex-col items-start justify-between gap-y-2 gap-x-0 md:gap-x-4 md:gap-y-4 ">
+                        <h1 class="text-base lg:text-lg leading-tight font-bold">Mission</h1>
+                        <p class="text-sm lg:text-base">To provide landlords and tenants with a secure, efficient, and rewarding rental experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-neutral-500 h-auto my-10 md:my-20">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative z-10 flex flex-col items-start justify-between gap-4 text-slate-50">
+                <h1 class="text-4xl text-center font-bold my-10 lg:max-w-[60%] mx-auto">Transforming the way rental management services are provided</h1>
+                <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-16 lg:gap-y-0">
+                    <div class="flex flex-col gap-y-2 md:gap-y-4 items-center">
+                        <div>
+                            <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-lg md:text-xl font-bold mb-2">Creating a seamless experience for landlords and tenants</h2>
+                            <p class="mt-2 md:mt-4 mb-8 leading-relaxed text-sm lg:text-base mr-2">
+                                At HokwePay, we aim to streamline the rent collection process for
+                                landlords and revolutionize rental management.
+                            </p>
+                            <a href="#" class="hover:underline px-4 py-4">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2 md:gap-y-4 items-center">
+                        <div>
+                            <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-lg md:text-xl font-bold mb-2">Enhancing rental management through innovative solutions</h2>
+                            <p class="mt-2 md:mt-4 mb-8 leading-relaxed text-sm lg:text-base mr-2">
+                                Our mission is to provide landlords with secure and efficient rent collection services.
+                            </p>
+                            <a href="#" class="hover:underline px-4 py-4">Sign Up &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2 md:gap-y-4 items-center">
+                        <div>
+                            <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-lg md:text-xl font-bold mb-2">Simplifying the rent payment process for landlords and tenants</h2>
+                            <p class="mt-2 md:mt-4 mb-8 leading-relaxed text-sm lg:text-base mr-2">
+                                We value security, efficiency, and innovation in our rental management services.
+                            </p>
+                            <a href="#" class="hover:underline px-4 py-4">Get Started &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 flex flex-col justify-between h-full">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Relume Logo" class="w-100 h-12">
+                    <h1 class="text-4xl leading-tight font-bold mt-4">
+                        Our Story: Solving Rent Payment Challenges
+                    </h1>
+                    <p class="mt-4 leading-relaxed text-sm lg:text-base">
+                        HokwePay was founded with the aim of revolutionizing rent payment and management.
+                        We recognized the challenges faced by both landlords and tenants in the traditional
+                        rent collection process, and set out to provide a seamless digital solution.
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-none px-4 py-2">Sign Up →</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full mt-10 md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col items-center justify-center h-full gap-y-4">
+            <div class="flex flex-col text-center">
+                <h2 class="text-sm font-medium mb-2">Innovative</h2>
+                <h1 class="text-4xl font-bold mb-4">Meet Our Team</h1>
+                <p class="mb-8">Get to know the core members of HokwePay</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="space-y-4 text-center">
+                    <div class="w-full h-100">
+                        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">John Doe</h3>
+                        <p class="text-sm mb-4">CEO</p>
+                        <p class="text-xs">John is a visionary leader with a passion for innovation.</p>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="w-full h-100">
+                        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">John Doe</h3>
+                        <p class="text-sm mb-4">CEO</p>
+                        <p class="text-xs">John is a visionary leader with a passion for innovation.</p>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="w-full h-100">
+                        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">John Doe</h3>
+                        <p class="text-sm mb-4">CEO</p>
+                        <p class="text-xs">John is a visionary leader with a passion for innovation.</p>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="w-full h-100">
+                        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">John Doe</h3>
+                        <p class="text-sm mb-4">CEO</p>
+                        <p class="text-xs">John is a visionary leader with a passion for innovation.</p>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col text-center mt-10">
+                <h1 class="text-2xl font-bold mb-4">We're hiring!</h1>
+                <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div>
+                    <a href="#" class="border border-black px-4 py-2">Open positions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20">
+        <div class="flex flex-col md:items-center items-center md:justify-between">
+            <div class="mb-16">
+                <p class="text-lg font-bold">Trusted by industry-leading companies worldwide</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 md:gap-6 w-full lg:flex lg:justify-between">
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-end md:justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Relume" alt="Relume Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-end md:justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Relume" alt="Relume Logo" class="h-12">
+                </div>
+                <div class="flex items-start justify-start">
+                    <img src="https://via.placeholder.com/100x30.png?text=Webflow" alt="Webflow Logo" class="h-12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xl:max-w-7xl xl:px-4 mx-auto px-5 md:px-10 py-10 lg:py-20 mb-10">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between h-full gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-16">
+            <div class="w-full md:w-1/2 lg:mr-8 flex flex-col justify-between h-full">
+                <div>
+                    <h1 class="text-4xl leading-tight font-bold mt-4">
+                        Join the HokwePay Community
+                    </h1>
+                    <p class="mt-6 leading-relaxed text-sm lg:text-base">
+                        Download the app and start enjoying the benefits today
+                    </p>
+                </div>
+                <div class="mt-6 flex justify-start gap-4">
+                    <a href="#" class="border border-black bg-black text-white px-4 py-2">Download</a>
+                    <a href="#" class="border border-black px-4 py-2">Contact</a>
+                </div>
+            </div>
+            <div class="md:flex w-full md:w-1/2 h-full md:mt-0">
+                <div class="flex items-center justify-center w-full h-full">
+                    <img src="https://via.placeholder.com/300x200" alt="Placeholder Image" class="w-full max-h-[95%] object-contain">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="relative bg-cover bg-center bg-no-repeat h-auto my-10 md:my-20" style="background-image: url('https://via.placeholder.com/1200');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="xl:max-w-7xl xl:px-2 mx-auto px-5 md:px-10 py-10 lg:py-20">
+            <div class="relative w-full px-5 lg:px-0 lg:w-2/3 mx-auto z-10 flex flex-col items-center justify-center gap-y-4 h-full text-center text-white">
+                <h1 class="text-4xl font-bold mb-2">
+                    Discover Our Innovative Rent Payment Solution
+                </h1>
+                <p class="leading-relaxed text-center text-sm lg:text-base">
+                    Simplify rent collection and enhance tenant experience with HokwePay.
+                </p>
+                <div class="flex justify-start gap-4 mt-4">
+                    <a href="#" class="bg-black text-white px-4 py-2">Learn More</a>
+                    <a href="#" class="border border-white text-white px-4 py-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-20 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start gap-20 mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold mb-4">Logo</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row md:flex-wrap w-full justify-between">
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="#">Services</a></li>
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a href="faqs.html">FAQ</a></li>
+                            <li class="mb-2"><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                            <li class="mb-2"><a href="#">Testimonials</a></li>
+                            <li class="mb-2"><a href="#">Partners</a></li>
+                            <li class="mb-2"><a href="#">Investors</a></li>
+                            <li class="mb-2"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-lg font-semibold mb-4">News</h3>
+                        <ul>
+                            <li class="mb-2"><a href="#">Events</a></li>
+                            <li class="mb-2"><a href="terms.html">Terms</a></li>
+                            <li class="mb-2"><a href="#">Privacy</a></li>
+                            <li class="mb-2"><a href="#">Cookies</a></li>
+                            <li class="mb-2"><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 md:mt-4 lg:mt-0">
+                        <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+                        <p class="mb-4">Join our mailing list for the latest updates and promotions.</p>
+                        <form class="flex flex-col sm:flex-row mb-4">
+                            <input type="email" placeholder="Enter email address" class="border px-4 py-2 mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto">
+                            <button class="border px-4 py-2">Subscribe</button>
+                        </form>
+                        <p class="text-sm">By subscribing, you agree to our Privacy Policy and consent to receive updates from us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm mb-4 md:mb-0">
+                        © 2024 HokwePay. All rights reserved.
+                        <a href="#" class="underline mx-2">Privacy Policy</a>
+                        <a href="terms.html" class="underline mx-2">Terms of Service</a>
+                        <a href="#" class="underline mx-2">Cookies Settings</a>
+                    </p>
+                    <div class="flex space-x-2">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
